@@ -38,3 +38,5 @@ qmk flash -kb crkbd/r2g -km noinfo
 ```sh
 qmk c2json -kb crkbd/r2g -km noinfo -o keymap.json keymap.c
 ```
+
+_ATTENTION_ Remove the JSON from the folder before compiling the firmware. Can be safely used for printing purposes.
