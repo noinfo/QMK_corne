@@ -32,7 +32,7 @@ In the root directory of the qmk firmware do:
 qmk flash -kb crkbd/r2g -km noinfo
 ```
 
-...or use GUI tools and the firmware file from the root directory
+...or use the [QMK toolbox](https://github.com/qmk/qmk_toolbox) and the firmware file from the root directory
 ## Keymap JSON
 
 ```sh
