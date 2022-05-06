@@ -16,7 +16,6 @@ Then go into the root directory of the qmk firmware (whereever you just cloned i
 git clone git@github.com:noinfo/QMK_corne.git /keyboards/crkbd/keymaps/noinfo
 ```
 
-
 ## Building
 
 In the root directory of the qmk firmware do:
@@ -33,6 +32,7 @@ In the root directory of the qmk firmware do:
 qmk flash -kb crkbd/r2g -km noinfo
 ```
 
+...or use GUI tools and the firmware file from the root directory
 ## Keymap JSON
 
 ```sh
