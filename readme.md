@@ -32,3 +32,9 @@ In the root directory of the qmk firmware do:
 ```sh
 qmk flash -kb crkbd/r2g -km noinfo
 ```
+
+## Keymap JSON
+
+```sh
+qmk c2json -kb crkbd/r2g -km noinfo -o keymap.json keymap.c
+```
