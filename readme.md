@@ -40,3 +40,7 @@ qmk c2json -kb crkbd/r2g -km noinfo -o keymap.json keymap.c
 ```
 
 _ATTENTION_ Remove the JSON from the folder before compiling the firmware. Can be safely used for printing purposes.
+
+## Layout-Resources
+
+In the folder `layout-editor-resources` you can find resources from and for [keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/) for a single graphic containing info on all layers (work in progress).
