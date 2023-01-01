@@ -29,13 +29,13 @@ enum my_layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
+       HYPR_T(KC_ESC),    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_A,    KC_S,    MT(MOD_LCTL, KC_D),    MT(MOD_LSFT, KC_F),    KC_G,                         KC_H,    MT(MOD_LSFT, KC_J),    MT(MOD_LCTL, KC_K),    KC_L, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_RSFT,
   //|--------+--------+--------+--------+-------- +--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, TT(_LOWER), KC_LGUI,     KC_SPC, TT(_RAISE), KC_ENT
+                                          KC_LALT, TT(_LOWER), KC_LGUI,     MEH_T(KC_SPC), TT(_RAISE), KC_ENT
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -55,25 +55,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC,    KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_PERC,                         KC_CIRC,    KC_AMPR,    KC_ASTR,    KC_LPRN,    KC_RPRN, KC_BSPC,
+       HYPR_T(KC_ESC),    KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_PERC,                         KC_CIRC,    KC_AMPR,    KC_ASTR,    KC_LPRN,    KC_RPRN, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, KC_DEL, LGUI(KC_S), KC_PGUP, LCTL(KC_TAB), XXXXXXX,                      KC_MINS,  KC_PPLS, KC_LBRC, KC_RBRC, KC_PSLS,  KC_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, LGUI(LCTL(KC_LEFT)), LGUI(LCTL(KC_RIGHT)), KC_PGDN, KC_MPLY, KC_MUTE,                      KC_UNDS, KC_EQL, KC_LCBR, KC_RCBR, KC_GRV, KC_PIPE,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, _______,  KC_LGUI,     KC_SPC, _______, KC_RALT
+                                          KC_LALT, _______,  KC_LGUI,     MEH_T(KC_SPC), _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
   [_RAISE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC, KC_1,   KC_2, KC_3,  KC_4, KC_5,                      KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
+       HYPR_T(KC_ESC), KC_1,   KC_2, KC_3,  KC_4, KC_5,                      KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, LCTL(LSFT(KC_TAB)), KC_PGUP, LCTL(KC_TAB), XXXXXXX,                      KC_TAB, KC_LEFT,   KC_DOWN,KC_UP, KC_RIGHT, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, LGUI(LCTL(KC_LEFT)), LGUI(LCTL(KC_RIGHT)), KC_PGDN, KC_MPLY, KC_MUTE,                      KC_PSCR, KC_CAPS, KC_VOLD, KC_VOLU, KC_MPRV, KC_MNXT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, _______,  KC_LGUI,     KC_SPC, _______, KC_RALT
+                                          KC_LALT, _______,  KC_LGUI,     MEH_T(KC_SPC), _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
